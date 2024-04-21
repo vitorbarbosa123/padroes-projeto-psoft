@@ -3,6 +3,15 @@ import state.state.State.State;
 import state.state.Veiculo.CarroStrategy;
 import state.state.Veiculo.Strategy;
 
+/*
+ * O padrão de projeto state permite que uma classe tenha diversos comportamentos sem que um funcionamento impacte no outro. 
+ * Esse padrão implementa uma ideia de Estados. Cada estado que uma classe pode assumir deve ser isolado em uma outra classe. 
+ * Cada classe de estado conhece o outro estado que a classe pai pode assumir, criando um sistema de pipeline (estado1 -> estado2 -> estado3 -> ...)
+ * A classe pai não precisa englobar todos os estados, mas precisa partir de um para alcançar os outros.
+ * Cada classe de estado, ao iniciar precisa modificar o próprio estado, apontando para um outro estado. Em seguida, ela pode executar comportamentos
+ * especificos. O ciclo é repetido até que o estado alcance uma classe que não realiza mais nada.
+ * @author Vitor Barbosa
+ */
 public class Uber {
 
     Corrida corrida;
