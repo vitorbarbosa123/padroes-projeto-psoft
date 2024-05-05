@@ -1,4 +1,4 @@
-package command.command;
+package command;
 
 // Command
 public interface Veiculo {

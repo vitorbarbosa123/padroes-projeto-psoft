@@ -1,4 +1,4 @@
-package command.command;
+package command;
 
 // Concrete command
 public class Moto implements Veiculo {

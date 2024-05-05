@@ -1,4 +1,4 @@
-package command.command;
+package command;
 
 import java.util.HashSet;
 import java.util.Set;
